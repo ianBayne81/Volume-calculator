@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(59, 245, 3);
+}
+
+p {
+    font-size: 15px;
+    font-weight: 700;
+}  
+
+.canvas {
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    opacity: 1;
+    background: linear-gradient(rgb(98, 250, 98), rgb(0, 29, 0));
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border: solid 5pt white;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.header {
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    padding-bottom: 5px;
+}
+
+h1 {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(2, 26, 2);
+    /*text-shadow: 5px 5px 3px #2f2f35;*/
+    padding-bottom: 2px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Black Ops One', cursive;
+    font-size: 25px;
+    font-weight: 800px;
+}
+
+.sub-section {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#drop-down {
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Anton', sans-serif;
+}
+
+label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    padding-right: 15px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px; 
+}
+
+input {
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+button {
+    background: rgb(2, 26, 2);
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer {
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Black Ops One';
+    color: white;
+    padding-top: 20px;
+}
+.sentence {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
