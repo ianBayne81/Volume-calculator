@@ -24,7 +24,7 @@ const calculateButton = document.createElement('button')
 calculateButton.textContent = 'CALCULATE'
 
 const refreshButton = document.createElement('button')
-refreshButton.textContent = 'Refresh Page'
+refreshButton.textContent = 'Refresh'
 
 const renderPage = () => {
     document.querySelector('#drop-down').value = 'garden-shape'
@@ -61,8 +61,8 @@ const generateRectDom = () => {
     inputsEl.appendChild(lengthEl)
     inputsEl.appendChild(widthEl)
     inputsEl.appendChild(depthEl)
-    inputsEl.appendChild(calculateButton)
     inputsEl.appendChild(volumeEl)
+    inputsEl.appendChild(calculateButton)
     inputsEl.appendChild(refreshButton)
 
     calculateButton.addEventListener("click", (e) => {
@@ -84,8 +84,8 @@ const generateTriDom = () => {
     inputsEl.appendChild(lengthEl)
     inputsEl.appendChild(widthEl)
     inputsEl.appendChild(depthEl)
-    inputsEl.appendChild(calculateButton)
     inputsEl.appendChild(volumeEl)
+    inputsEl.appendChild(calculateButton)
     inputsEl.appendChild(refreshButton)
 
     calculateButton.addEventListener("click", (e) => {
@@ -106,8 +106,8 @@ const generateCirDom = () => {
 
     inputsEl.appendChild(radiusEl)
     inputsEl.appendChild(depthEl)
-    inputsEl.appendChild(calculateButton)
     inputsEl.appendChild(volumeEl)
+    inputsEl.appendChild(calculateButton)
     inputsEl.appendChild(refreshButton)
 
     calculateButton.addEventListener("click", (e) => {
