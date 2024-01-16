@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 700;
+}  
+
+.canvas {
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    height: 600px;
+    width: 400px;
+    opacity: .9;
+    background: linear-gradient(rgb(23, 107, 23), rgb(0, 29, 0));
+    border-radius: 20px;
+    border: solid 5pt yellow;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.header {
+    background-image: url("../images/bedrocklogo.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    height: 100px;
+}
+
+h1 {
+    padding: 5px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    font-weight: 900;
+    color: rgb(2, 26, 2);
+    /*text-shadow: 5px 5px 3px #2f2f35;*/
+    padding-bottom: 2px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Black Ops One', cursive;
+    font-size: 25px;
+    font-weight: 800px;
+}
+
+.sub-section {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.selector {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#drop-down {
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Anton', sans-serif;
+}
+
+label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+    padding-right: 15px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+}
+
+input {
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 5px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 150px;
+}
+
+button {
+    background: rgb(2, 26, 2);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1)
+}
+
+a {
+    cursor:pointer;
+    color: white;
+}
+
+.footer {
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Black Ops One';
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+/* for desktop display */
+@media screen and (min-width: 1024px) {
+    .app {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+/*for tablet display */
+@media screen and (min-width:471px) and (max-width: 1023px) {
+    .app{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        height: 600px;
+        width: 400px;
+    }
+}
+
+/* for phone display */
+@media screen and (min-width: 0px) and (max-width: 470px) {
+    body {
+        background: black;
+    }
+
+    .app {
+        margin: 0px;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .header {
+        background-size: cover; 
+        background-repeat: no-repeat;
+        border-radius: 20px;
+    }
+}

@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 700;
+}  
+
+.canvas {
+    display: flex;
+    justify-content: center;
+}
+
+.app {
+    height: 600px;
+    width: 400px;
+    opacity: .9;
+    background: linear-gradient(rgb(23, 107, 23), rgb(0, 29, 0));
+    border-radius: 20px;
+    border: solid 5pt yellow;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.header {
+    background-image: url("../images/bedrocklogo.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    height: 100px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Black Ops One', cursive;
+    font-size: 25px;
+    font-weight: 800px;
+}
+
+.sub-section {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+#svg-container {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#svg-area {
+    /* transform: scale(.75);  */
+    height: 100%;
+    width: 100%; 
+}
+
+/* Button so skip the animation and go straight to the site*/
+
+#skip-div {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#skip-button {
+    background: rgb(2, 26, 2);
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#skip-button:hover {
+    transform: scale(1.2)
+}
+
+/*truck parts*/
+
+#body {
+    stroke: white;
+    stroke-width: 5;
+    fill: black;
+}
+
+#window {
+    stroke: white;
+    stroke-width: 2;
+    fill: black;
+}
+
+#chassis {
+    stroke: white;
+    stroke-width: 2;
+    fill: black;
+}
+
+#tray {
+    stroke: white;
+    stroke-width: 5;
+    fill: black;
+}
+
+.text {
+    font-size: 20px;
+    stroke: white;
+    stroke-width: .5;
+    fill: white;
+}
+
+.wheels {
+    stroke: white;
+    stroke-width: 15;
+    fill: black;
+    stroke-dasharray: 4;
+}
+
+.inner-wheels {
+    stroke: black;
+    stroke-width: 2;
+    fill: white;
+}
+
+#ground-pile {
+    stroke-width: 5;
+}
+
+#truck-dirt {
+    stroke: brown;
+    stroke-width: 5;
+    fill: brown;
+}
+
+/* animate dirt coming out of the back of the truck */
+
+ .dirt-lines { 
+    stroke: transparent;
+    stroke-width: 5;
+    fill: none;
+    stroke-dasharray: 5;
+    animation-name: animate-dirt;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+}
+
+@keyframes animate-dirt {
+    from {stroke-dashoffset: 1000;}
+    to {stroke-dashoffset: 0;} 
+}
+
+a {
+    cursor:pointer;
+    color: white;
+}
+
+.footer {
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Black Ops One';
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* for desktop display */
+@media screen and (min-width: 1024px) {
+    .app {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+/*for tablet display */
+@media screen and (min-width:471px) and (max-width: 1023px) {
+    .app {
+        margin: 0px;
+        height: 600px;
+        width: 400px;
+    }
+}
+
+/* for phone display */
+@media screen and (min-width: 0px) and (max-width: 470px) {
+
+    .app {
+        margin: 0px;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .header {
+        background-size: cover; 
+        background-repeat: no-repeat;
+        border-radius: 20px;
+    }
+    
+    #svg-area {
+        transform: scale(.75);
+        width: 100vw;
+    }
+
+}
